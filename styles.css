@@ -1,0 +1,495 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #ff6f61;
+  padding: 20px 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 30px;
+}
+
+nav .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav .nav-links li a:hover {
+  color: #00b8f06b;
+}
+
+/* Home Section */
+.home {
+  background: linear-gradient(to right, rgba(255, 111, 97, 0.8), rgba(255, 94, 77, 0.8));
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-content {
+  z-index: 2;
+  position: relative;
+}
+
+.home h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.home p {
+  font-size: 24px;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Menu Section */
+.menu {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu-item {
+  width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 4px solid #ff6f61;
+}
+
+.menu-item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #333;
+}
+
+.menu-item p {
+  font-size: 18px;
+  color: #ff6f61;
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Section */
+.gallery {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.image-slider {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: none;
+  transition: transform 1s ease;
+}
+
+.slider img:first-child {
+  display: block;
+}
+
+.slider img:hover {
+  transform: scale(1.05);
+}
+
+/* Reservation Section */
+.reservation {
+  background-color: #ff6f61;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reservation h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.reservation form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reservation input,
+.reservation textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.reservation button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.reservation button:hover {
+  background-color: #e89a00;
+}
+
+/* Custom Order Section */
+.custom-order {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.custom-order h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #ff6f61;
+}
+
+.custom-order form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-order select,
+.custom-order textarea,
+.custom-order button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+
+
+/* Custom Order Section - Toppings */
+.custom-order .toppings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.custom-order .toppings input {
+  margin-right: 10px;
+  margin-bottom: 10px;  /* Added extra space below each checkbox */
+}
+
+.custom-order .toppings label {
+  margin-bottom: 10px;  /* Added space below each label for better spacing */
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.custom-order button {
+  background-color: #ff6f61;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.custom-order button:hover {
+  background-color: #f0a500;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#map iframe {
+  border: 0;
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+}
+
+/* Footer */
+footer {
+  background-color: #ff6f61;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-items {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu-item {
+      width: 90%;
+      margin-bottom: 30px;
+  }
+
+  .image-slider {
+      flex-direction: column;
+  }
+
+  .reservation form {
+      padding: 20px;
+  }
+
+  .custom-order form {
+      padding: 20px;
+  }
+
+  .nav-links li {
+      margin-left: 15px;
+  }
+}
+
+/* Highlighting Prices */
+.custom-order select option,
+.custom-order .toppings label {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.custom-order .toppings label {
+    margin-bottom: 10px;
+}
+
+.custom-order select option {
+    font-weight: 600;
+}
+
+.custom-order label {
+    font-size: 18px;
+}
+
+.custom-order .cup-cone label {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.custom-order .toppings input {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Add color to prices */
+.custom-order select option,
+.custom-order .toppings label {
+    color: #333;
+}
+
+.custom-order select option {
+    color: #2a7f62; /* Greenish color for the flavor/size options */
+}
+
+.custom-order .toppings label {
+    color: #555; /* Slightly darker grey for toppings */
+}
+
+/* Contact Section */
+.contact {
+  background-color: #f9f9f9; /* Light background color for contrast */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  color: #ff6f61; /* Green color for the heading */
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-bottom: 40px;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #444;
+}
+
+.contact-info a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #f0a500;
+}
+
+.contact-form textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
