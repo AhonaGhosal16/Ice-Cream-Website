@@ -13,8 +13,9 @@
     <header>
         <nav>
             <div class="logo">
-                <h1><i class="fas fa-ice-cream"></i>Frosty Treats</h1>
+                <h1><i class="fas fa-ice-cream"></i> Frosty Treats</h1>
             </div>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
@@ -35,160 +36,97 @@
         </div>
     </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="menu">
-        <h2>Our Menu</h2>
-        <div class="menu-items">
-            <div class="menu-item">
-                <img src="ice-cream-balls-bowl.jpg" alt="Vanilla Ice Cream">
-                <h3>Vanilla Ice Cream</h3>
-                <p>₹150</p>
-            </div>
-            <div class="menu-item">
-                <img src="side-view-chocolate-ice-cream-with-nuts-wafer-rolls.jpg" alt="Chocolate Ice Cream">
-                <h3>Chocolate Ice Cream</h3>
-                <p>₹160</p>
-            </div>
-            <div class="menu-item">
-                <img src="pexels-micheile-7518552.jpg" alt="Strawberry Ice Cream">
-                <h3>Strawberry Ice Cream</h3>
-                <p>₹170</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
+    <!-- Image Slider -->
     <section id="gallery" class="gallery">
         <h2>Gallery</h2>
         <div class="image-slider">
+            <button class="prev">&#10094;</button>
             <div class="slider">
                 <img src="pexels-teejay-1362534.jpg" alt="Ice Cream 1">
                 <img src="pexels-jeshoots-3631.jpg" alt="Ice Cream 2">
                 <img src="pexels-alisha-mishra-579430-1343504.jpg" alt="Ice Cream 3">
             </div>
+            <button class="next">&#10095;</button>
         </div>
     </section>
 
     <!-- Reservation Form -->
     <section id="reservation" class="reservation">
         <h2>Make a Reservation</h2>
-        <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <input type="date" name="date" required>
-            <input type="time" name="time" required>
+        <form id="reservation-form">
+            <input type="text" id="res-name" name="name" placeholder="Your Name" required>
+            <input type="email" id="res-email" name="email" placeholder="Your Email" required>
+            <input type="date" id="res-date" name="date" required>
+            <input type="time" id="res-time" name="time" required>
             <textarea name="message" placeholder="Special Requests"></textarea>
             <button type="submit">Reserve Now</button>
         </form>
+        <p id="reservation-message"></p>
     </section>
 
     <!-- Custom Order Section -->
-<section id="custom-order" class="custom-order">
-  <h2>Customize Your Ice Cream</h2>
-  <form action="#" method="post">
-      <label for="flavor">Choose your flavor:</label>
-      <select id="flavor" name="flavor">
-          <option value="vanilla">Vanilla - ₹150</option>
-          <option value="chocolate">Chocolate - ₹170</option>
-          <option value="strawberry">Strawberry - ₹160</option>
-          <option value="mint">Mint - ₹180</option>
-          <!-- Add more flavors as needed -->
-      </select>
-
-      <label for="size">Choose your size:</label>
-      <select id="size" name="size">
-          <option value="small">Small - ₹100</option>
-          <option value="medium">Medium - ₹150</option>
-          <option value="large">Large - ₹200</option>
-      </select>
-
-      <div class="toppings">
-          <label>Choose your toppings:</label>
-          <br>
-          <input type="checkbox" id="chocolate-chips" name="topping" value="chocolate-chips">
-          <label for="chocolate-chips">Chocolate Chips - ₹30</label>
-          <input type="checkbox" id="sprinkles" name="topping" value="sprinkles">
-          <label for="sprinkles">Sprinkles - ₹20</label>
-          <input type="checkbox" id="caramel-syrup" name="topping" value="caramel-syrup">
-          <label for="caramel-syrup">Caramel Syrup - ₹25</label>
-          <!-- Add more toppings as needed -->
-      </div>
-
-      <!-- New option for Cup or Cone -->
-      <div class="cup-cone">
-          <label>Choose your base:</label>
-          <br>
-          <input type="radio" id="cup" name="base" value="cup">
-          <label for="cup">Cup - ₹50</label>
-          <input type="radio" id="cone" name="base" value="cone">
-          <label for="cone"> Cone - ₹60</label>
-      </div>
-<br>
-      <label for="special-request">Special requests:</label>
-      <textarea id="special-request" name="special-request" rows="4" placeholder="Any special instructions?"></textarea>
-
-      <button type="submit">Place Order</button>
-  </form>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
-
-  <div class="contact-info">
-      <h3>Get in Touch</h3>
-      <p>Have questions or want to place an order? Reach out to us:</p>
-      <ul>
-          <li>Email: <a href="mailto:info@frostytreats.com">info@frostytreats.com</a></li>
-          <li>Phone: <a href="tel:+1234567890">(123) 456-7890</a></li>
-          <li>Address: 123 Sweet Street, New Delhi, India</li>
-      </ul>
-  </div>
-
-  <!-- Contact Form -->
-  <div class="contact-form">
-      <h3>Send Us a Message</h3>
-      <form action="#" method="post">
-          <label for="name">Your Name:</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-          <label for="email">Your Email:</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-          <label for="message">Your Message:</label>
-          <textarea id="message" name="message" placeholder="Type your message here" rows="4" required></textarea>
-
-          <button type="submit">Send Message</button>
-      </form>
-  </div>
-</section>
-
-
-    Here:</h3>
-      <!-- Updated Google Map Embed for New Delhi, India -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9302552309827!2d77.2090216!3d28.613939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d199d2d9e4f%3A0x22d29cc7589edca2!2sConnaught+Place%2C+New+Delhi%2C+Delhi%2C+India!5e0!3m2!1sen!2sus!4v1636821906755!5m2!1sen!2sus" 
-          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  </div>
-</section>
-
+    <section id="custom-order" class="custom-order">
+        <h2>Customize Your Ice Cream</h2>
+        <form id="order-form">
+            <label for="flavor">Choose your flavor:</label>
+            <select id="flavor" name="flavor">
+                <option value="Vanilla - ₹150">Vanilla - ₹150</option>
+                <option value="Chocolate - ₹170">Chocolate - ₹170</option>
+                <option value="Strawberry - ₹160">Strawberry - ₹160</option>
+                <option value="Mint - ₹180">Mint - ₹180</option>
+            </select>
+            <button type="submit">Place Order</button>
+        </form>
+        <p id="order-summary"></p>
+    </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Ice Cream Paradise. All rights reserved.</p>
+        <p>&copy; 2024 Frosty Treats. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript for Slider -->
     <script>
-        let index = 0;
-        const images = document.querySelectorAll('.slider img');
-        
-        function changeSlide() {
-            images[index].style.display = "none";
-            index = (index + 1) % images.length;
+        // Mobile Navigation Toggle
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+            document.querySelector(".nav-links").classList.toggle("active");
+        });
+
+        // Image Slider Functionality
+        let sliderIndex = 0;
+        const images = document.querySelectorAll(".slider img");
+        function showSlide(index) {
+            images.forEach(img => img.style.display = "none");
             images[index].style.display = "block";
         }
+        document.querySelector(".prev").addEventListener("click", function () {
+            sliderIndex = (sliderIndex - 1 + images.length) % images.length;
+            showSlide(sliderIndex);
+        });
+        document.querySelector(".next").addEventListener("click", function () {
+            sliderIndex = (sliderIndex + 1) % images.length;
+            showSlide(sliderIndex);
+        });
+        showSlide(sliderIndex);
 
-        setInterval(changeSlide, 3000);  // Change image every 3 seconds
+        // Reservation Form Validation
+        document.querySelector("#reservation-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            let name = document.querySelector("#res-name").value;
+            let email = document.querySelector("#res-email").value;
+            if (name === "" || email === "") {
+                document.querySelector("#reservation-message").innerText = "Please fill in all fields.";
+                return;
+            }
+            document.querySelector("#reservation-message").innerText = "Reservation confirmed!";
+        });
+
+        // Custom Order Summary Display
+        document.querySelector("#order-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            let flavor = document.querySelector("#flavor").value;
+            document.querySelector("#order-summary").innerText = `You ordered: ${flavor}`;
+        });
     </script>
 </body>
 </html>
+
